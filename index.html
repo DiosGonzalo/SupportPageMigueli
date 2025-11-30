@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soporte y Privacidad - App de Peluquería</title>
+    <title>Soporte, Privacidad y Normas - App de Peluquería</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -29,25 +29,55 @@
             color: #1a73e8;
             margin-bottom: 10px;
         }
+        h2 {
+            font-size: 1.2em;
+            margin-top: 0;
+            color: #333;
+        }
         p {
             font-size: 16px;
             line-height: 1.6;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
         }
-        .contact-info, .privacy-info {
-            background-color: #f7f9fa;
-            border-left: 5px solid #1a73e8;
-            padding: 15px;
+        ul {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        /* Estilos compartidos para las cajas de información */
+        .contact-info, .privacy-info, .safety-info {
+            padding: 20px;
             border-radius: 8px;
             margin-bottom: 25px;
             text-align: left;
         }
-        .contact-info p, .privacy-info p {
-            margin: 5px 0;
+        
+        /* Caja de Contacto (Azul) */
+        .contact-info {
+            background-color: #f7f9fa;
+            border-left: 5px solid #1a73e8;
         }
-        .contact-info strong, .privacy-info strong {
-            color: #1a73e8;
+
+        /* Caja de Privacidad (Verde o Azul) */
+        .privacy-info {
+            background-color: #f7f9fa;
+            border-left: 5px solid #1a73e8;
         }
+
+        /* NUEVA CAJA: Seguridad Infantil (Importante - Borde Rojo/Naranja para distinguir legalmente) */
+        .safety-info {
+            background-color: #fff5f5; /* Fondo ligeramente rojizo para resaltar */
+            border-left: 5px solid #d93025; /* Rojo Google */
+        }
+        
+        .contact-info strong, .privacy-info strong, .safety-info strong {
+            color: #333;
+            font-weight: 700;
+        }
+        
         .contact-info a {
             color: #007bff;
             text-decoration: none;
@@ -60,27 +90,40 @@
 </head>
 <body>
     <div class="container">
-        <h1>Soporte Técnico y Privacidad</h1>
-        <p>Si tienes alguna pregunta, problema técnico o sugerencia sobre nuestra app, estamos aquí para ayudarte.</p>
+        <h1>Soporte y Normas de la Comunidad</h1>
+        <p>Bienvenido a la página oficial de soporte y políticas de <strong>[Nombre de tu App]</strong>.</p>
+
+        <!-- SECCIÓN OBLIGATORIA PARA GOOGLE PLAY (SEGURIDAD INFANTIL) -->
+        <div class="safety-info">
+            <h2 style="color: #d93025;">Normas de Seguridad Infantil (Obligatorio)</h2>
+            <p>En <strong>[Nombre de tu App]</strong>, estamos comprometidos con la seguridad de todos nuestros usuarios, especialmente los menores.</p>
+            <p><strong>Tolerancia Cero con el Abuso Infantil:</strong></p>
+            <p>Prohibimos estrictamente el uso de nuestra aplicación para publicar, compartir o promover cualquier contenido relacionado con el <strong>Abuso y la Explotación Sexual Infantil (CSAE / EASI)</strong>.</p>
+            <ul>
+                <li>No permitimos contenido que sexualice a menores.</li>
+                <li>No toleramos el "grooming" (acoso sexual a menores) ni la sextorsión.</li>
+            </ul>
+            <p><strong>Reporte y Acción:</strong> Cualquier contenido que viole esta política será eliminado inmediatamente. Reportaremos cualquier caso de explotación infantil al <strong>National Center for Missing and Exploited Children (NCMEC)</strong> y a las autoridades policiales pertinentes.</p>
+        </div>
 
         <div class="contact-info">
-            <p><strong>Contacto por correo electrónico:</strong></p>
-            <p>Envíanos un correo directamente a la siguiente dirección:</p>
-            <p><a href="mailto:soporte@tupeluqueria.com">gdiosfiestas@gmail.com</a></p>
+            <h2>Contacto y Soporte</h2>
+            <p>Si tienes alguna pregunta técnica, sugerencia o necesitas reportar contenido inapropiado, contáctanos:</p>
+            <p><strong>Correo electrónico:</strong> <a href="mailto:gdiosfiestas@gmail.com">gdiosfiestas@gmail.com</a></p>
         </div>
 
-        <p>Por favor, incluye una descripción detallada de tu problema y tu información de contacto para que podamos responderte lo antes posible.</p>
-        
         <div class="privacy-info">
-            <h2>Nuestra Política de Privacidad de Datos</h2>
-            <p>En nuestra app de peluquería, valoramos y respetamos tu privacidad. Queremos que sepas que:</p>
+            <h2>Política de Privacidad de Datos</h2>
+            <p>En nuestra app de peluquería, valoramos y respetamos tu privacidad:</p>
             <ul>
-                <li>Los datos que nos proporcionas (nombre, teléfono, citas) se usan exclusivamente para **gestionar tus reservas y mejorar tu experiencia** en nuestro salón.</li>
-                <li>**No compartimos ni vendemos tus datos** a terceros para fines comerciales o de marketing.</li>
-                <li>Toda tu información está **protegida** para garantizar su seguridad y confidencialidad.</li>
-                <li>Puedes solicitar en cualquier momento el acceso o la eliminación de tus datos personales contactando con nosotros.</li>
+                <li>Los datos (nombre, teléfono, citas) se usan <strong>exclusivamente para gestionar tus reservas</strong>.</li>
+                <li><strong>No compartimos ni vendemos tus datos</strong> a terceros.</li>
+                <li>Toda tu información está protegida y encriptada.</li>
+                <li>Puedes solicitar la eliminación de tus datos contactando con nosotros al correo de arriba.</li>
             </ul>
         </div>
+        
+        <p style="font-size: 0.9em; color: #666; margin-top: 30px;">&copy; 2024 [Nombre de tu App]. Todos los derechos reservados.</p>
     </div>
 </body>
 </html>
